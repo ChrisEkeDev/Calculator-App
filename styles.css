@@ -88,10 +88,14 @@ main {
 }
 
 #calc__screen {
-  padding: 36px 24px;
+  padding: 0px 24px;
+  height: 125px;
   border-radius: 10px;
   font-size: 48px;
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #calc__keyboard {
@@ -103,7 +107,7 @@ main {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.btn {
+.btn, .operator, .special-btn {
   width: 100px;
   height: 55px;
   border-radius: 10px;
@@ -114,10 +118,10 @@ main {
   font-size: 32px;
   position: relative;
 }
-.btn span {
+.btn span, .operator span, .special-btn span {
   transform: translateY(2.5px);
 }
-.btn i {
+.btn i, .operator i, .special-btn i {
   font-size: 24px;
 }
 
@@ -168,12 +172,12 @@ main {
 .theme-1 #calc__keyboard {
   background-color: hsl(223deg, 31%, 20%);
 }
-.theme-1 .btn {
+.theme-1 .btn, .theme-1 .operator {
   background-color: hsl(30deg, 25%, 89%);
   box-shadow: 0 5px 0 hsl(28deg, 16%, 65%);
   color: hsl(221deg, 14%, 31%);
 }
-.theme-1 .btn:hover {
+.theme-1 .btn:hover, .theme-1 .operator:hover {
   transform: translateY(5px);
   background-color: hsl(28deg, 16%, 65%);
   box-shadow: none;
@@ -218,12 +222,12 @@ main {
 .theme-2 #calc__keyboard {
   background-color: hsl(0deg, 5%, 81%);
 }
-.theme-2 .btn {
+.theme-2 .btn, .theme-2 .operator {
   background-color: hsl(45deg, 7%, 89%);
   box-shadow: 0 5px 0 hsl(35deg, 11%, 61%);
   color: hsl(60deg, 10%, 19%);
 }
-.theme-2 .btn:hover {
+.theme-2 .btn:hover, .theme-2 .operator:hover {
   transform: translateY(5px);
   background-color: hsl(35deg, 11%, 61%);
   box-shadow: none;
@@ -268,12 +272,12 @@ main {
 .theme-3 #calc__keyboard {
   background-color: hsl(212deg, 23%, 13%);
 }
-.theme-3 .btn {
+.theme-3 .btn, .theme-3 .operator {
   background-color: hsl(45deg, 7%, 89%);
   box-shadow: 0 5px 0 hsl(35deg, 11%, 61%);
   color: hsl(212deg, 23%, 13%);
 }
-.theme-3 .btn:hover {
+.theme-3 .btn:hover, .theme-3 .operator:hover {
   transform: translateY(5px);
   background-color: hsl(35deg, 11%, 61%);
   box-shadow: none;
